@@ -823,9 +823,95 @@
             padding-top: 150px;
         }
     }
+
+    .cabinet{
+        &__history{
+            &-col{
+                
+                &--hidden{
+                    display: block;
+                }
+            }
+
+            &-row{
+                border-bottom: 1px solid #D6D6D6;
+                &:last-child{
+                    border: none;
+                }
+            }
+
+            &-headRow{
+                display: flex;
+                .cabinet__history-col{
+                    
+                    font-weight: normal;
+                    font-size: 10px;
+                    line-height: 12px;
+                    text-transform: uppercase;
+                    color: #6F6F6F;
+                }
+            }
+        }
+
+        
+    }
+
+    
 }
 
 @media screen and (min-width: 768px){
+
+    .cabinet{
+        &__wrap{
+            padding-top: 10px;
+        }
+
+        &__title{
+            text-align: left;
+        }
+
+        &__person{
+            justify-content: flex-start;
+        }
+
+        &__nav{
+            flex-direction: row;
+            justify-content: center;
+            max-width: 100%;
+            &-item{
+                border-left: none;
+                border-bottom: 4px solid #fff;
+                &:first-child{
+                    .cabinet__nav-ico{
+                        margin-left: 0;
+                    }
+                }
+
+                span{
+                    font-size: 12px;
+                    border-bottom:none;
+                    height: auto;
+                }
+
+                &--active{
+                    border-color: #FF7373;
+                }
+            }
+
+            &-ico{
+                span{
+                    font-size: 34px;
+                }
+            }
+        }
+
+        &__info{
+            margin: 0;
+            padding-top: 40px;
+        }
+    }
+
+
     .header{
         &__logo{
             max-width: 130px;
@@ -1313,6 +1399,111 @@
 }
 
 @media screen and (min-width: 1024px){
+
+
+    .cabinet__nav-item:first-child .cabinet__nav-ico{
+        margin-left: 25px;
+    }
+
+    .cabinet{
+        &__heading{
+            max-width: 370px;
+            
+        }
+
+        &__body{
+            display: flex;
+            align-items: center;
+        }
+
+        &__title{
+            margin-bottom: 60px;
+        }
+
+        &__person{
+            &-img{
+                width: 80px;
+                min-width: 80px;
+                height: 80px;
+            }
+
+            span{
+                font-size: 21px;
+                line-height: 25px;
+            }
+        }
+
+        &__info{
+            margin-left: 130px;
+        }
+
+        &__history{
+            flex-shrink: 2;
+            margin-left: 30px;
+        }
+
+        &__nav{
+            flex-direction: column;
+            &-item{
+                border-bottom: none;
+                border-left: 3px solid #fff;
+                &:nth-child(2){
+                    .cabinet__nav-ico{
+                        span{
+                            font-size: 26px;
+                        }
+                    }
+                }
+
+                span{
+                    font-size: 18px;
+                    line-height: 26px;
+                    border-bottom: 1px solid #D6D6D6;
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                }
+
+                &--active, &:hover{
+                    border-color:#FF7373;
+                }
+            }
+
+
+
+            
+
+            &-ico{
+                width: 45px;
+                span{
+                    font-size: 34px;
+                    border-bottom: none;
+                    padding: 0;
+                }
+            }
+        }
+
+        &__grid{
+            margin-left: 0;
+            margin-left: 130px;
+            &-item{
+                .itemCard__size{
+                    font-size: 10px;
+                }
+
+                .itemCard__separator{
+                    margin: 0px 15px;
+                }
+
+                .itemCard__button{
+                    font-size: 12px;
+                    span{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+
     .header{
         &__logo{
             max-width: 200px;
