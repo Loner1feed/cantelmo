@@ -922,7 +922,7 @@
   .about__text {
     max-width: 570px; }
   .about__paragraph {
-    padding-right: 50px; }
+    padding-right: 50px !important; }
   .about__img {
     max-width: 605px;
     min-width: 350px;

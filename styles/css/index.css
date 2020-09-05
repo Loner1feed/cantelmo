@@ -260,6 +260,14 @@ a {
     font-weight: 600;
     font-size: 13px; }
 
+.scrollbar-inner > .scroll-element.scroll-y {
+  width: 2px;
+  opacity: 1; }
+
+.scrollbar-inner > .scroll-element .scroll-bar {
+  background: #FF7373;
+  opacity: 1; }
+
 .close {
   position: relative;
   cursor: pointer; }
@@ -943,6 +951,9 @@ a {
   display: flex; }
 
 .slider__arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   display: none;
   -webkit-box-pack: center;
   -ms-flex-pack: center;

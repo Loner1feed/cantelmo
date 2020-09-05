@@ -35,14 +35,35 @@ $('.cart').click(function () {
     })
 });
 
-// slider
-$('.slider').slick({
+// slider1
+$('.slider1').slick({
     variableWidth: true,
     arrows: true,
     infinite: false,
     nextArrow: '<a href="javascript://" class="slider__arrow slider__arrow--next"><span class="icon-chevron"></span></a>',
     prevArrow: '<a href="javascript://" class="slider__arrow slider__arrow--prev"><span class="icon-chevron"></span></a>',
-    appendArrows: $('.slider__arrows'),
+    appendArrows: $('.slider1__arrows'),
+    responsive: [{
+        breakpoint: 530,
+        settings: {
+            arrows: false,
+
+        }
+    }]
+});
+
+
+// scroll
+$('.scrollbar-inner').scrollbar();
+
+// slider2
+$('.slider2').slick({
+    variableWidth: true,
+    arrows: true,
+    infinite: false,
+    nextArrow: '<a href="javascript://" class="slider__arrow slider__arrow--next"><span class="icon-chevron"></span></a>',
+    prevArrow: '<a href="javascript://" class="slider__arrow slider__arrow--prev"><span class="icon-chevron"></span></a>',
+    appendArrows: $('.slider2__arrows'),
     responsive: [{
         breakpoint: 530,
         settings: {
