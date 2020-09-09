@@ -1146,7 +1146,7 @@
   .cabinet__grid {
     margin-left: 0;
     margin-left: 130px; }
-    .cabinet__grid-item .itemCard__size {
+    .cabinet__grid-item .itemCard__size label {
       font-size: 10px; }
     .cabinet__grid-item .itemCard__separator {
       margin: 0px 15px; }

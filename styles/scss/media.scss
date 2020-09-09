@@ -1757,7 +1757,9 @@
             margin-left: 130px;
             &-item{
                 .itemCard__size{
-                    font-size: 10px;
+                    label{
+                        font-size: 10px;
+                    }
                 }
 
                 .itemCard__separator{

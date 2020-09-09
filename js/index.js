@@ -172,11 +172,21 @@ $('.history__dropHead').click(function () {
     $(this).toggleClass('history__dropHead--open')
 })
 
+function searchPop(){
+    $('.searchPop').fadeIn(function(){
+        $('.searchPop__close').click(function(){
+            $('.searchPop').fadeOut()
+        })
+    })
+}
+
 
 var lazyLoadInstance = new LazyLoad({
     elements_selector: ".lazy"
     // ... more custom settings?
 });
+
+
 
 var slider = document.querySelector('.catalog__dropdown-range');
 
