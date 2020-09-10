@@ -26,133 +26,132 @@
 
     </div>
 
-    <div class="popups">
-        <div class="wrap popups__wrap padding-big">
 
-            <div class="popup registration">
-                <div class="close popup__close">
-                    <span class="close__line"></span>
-                    <span class="close__line"></span>
+    <div class="popups">
+        
+        <div class="popup registration">
+            <div class="close popup__close">
+                <span class="close__line"></span>
+                <span class="close__line"></span>
+            </div>
+
+            <h2 class="title popup__title">
+                регистрация
+            </h2>
+
+            <form action="" class="popup__form">
+                <div class="checkout__field">
+
+                    <input type="text">
+                    <label>Имя</label>
                 </div>
 
-                <h2 class="title popup__title">
-                    регистрация
-                </h2>
+                <div class="checkout__field">
 
-                <form action="" class="popup__form">
-                    <div class="checkout__field">
+                    <input type="text">
+                    <label>Фамилия</label>
+                </div>
 
-                        <input type="text">
-                        <label>Имя</label>
-                    </div>
+                <div class="checkout__field">
 
-                    <div class="checkout__field">
+                    <input type="text">
+                    <label>Телефон</label>
+                </div>
 
-                        <input type="text">
-                        <label>Фамилия</label>
-                    </div>
+                <div class="checkout__field">
 
-                    <div class="checkout__field">
+                    <input type="text">
+                    <label>Email</label>
+                </div>
 
-                        <input type="text">
-                        <label>Телефон</label>
-                    </div>
+                <div class="checkout__field">
 
-                    <div class="checkout__field">
+                    <input type="text">
+                    <label>Пароль</label>
+                </div>
 
-                        <input type="text">
-                        <label>Email</label>
-                    </div>
+                <div class="popup__check">
+                    <input type="checkbox" name="check1" id="check1">
+                    <label for="check1"></label>
+                    <span class="popup__check-label">
+                        Я согласен с
+                        <a href="lavascript://">правилами</a>
+                    </span>
+                </div>
 
-                    <div class="checkout__field">
+                <input type="submit" value="зарегистрироваться" class="checkout__button button">
 
-                        <input type="text">
-                        <label>Пароль</label>
-                    </div>
+                <a href="javascript://" class="popup__row" onclick="popupLogin()">у меня уже есть аккаунт</a>
+            </form>
+        </div>
 
+        <div class="popup login">
+            <div class="close popup__close">
+                <span class="close__line"></span>
+                <span class="close__line"></span>
+            </div>
+
+            <h2 class="title popup__title">
+                авторизация
+            </h2>
+
+            <form action="" class="popup__form">
+                <div class="checkout__field">
+
+                    <input type="text">
+                    <label>Имя</label>
+                </div>
+
+                <div class="checkout__field">
+
+                    <input type="text">
+                    <label>Email</label>
+                </div>
+
+                <div class="popup__flexRow">
                     <div class="popup__check">
-                        <input type="checkbox" name="check1" id="check1">
-                        <label for="check1"></label>
+                        <input type="checkbox" name="check11" id="check11">
+                        <label for="check11"></label>
                         <span class="popup__check-label">
                             Я согласен с
                             <a href="lavascript://">правилами</a>
                         </span>
                     </div>
 
-                    <input type="submit" value="зарегистрироваться" class="checkout__button button">
-
-                    <a href="javascript://" class="popup__row" onclick="popupLogin()">у меня уже есть аккаунт</a>
-                </form>
-            </div>
-
-            <div class="popup login">
-                <div class="close popup__close">
-                    <span class="close__line"></span>
-                    <span class="close__line"></span>
+                    <a href="javascript://" onclick="popupPassword()">Забыли пароль?</a>
                 </div>
 
-                <h2 class="title popup__title">
-                    авторизация
-                </h2>
+                <input type="submit" value="войти" class="checkout__button button">
 
-                <form action="" class="popup__form">
-                    <div class="checkout__field">
-
-                        <input type="text">
-                        <label>Имя</label>
-                    </div>
-
-                    <div class="checkout__field">
-
-                        <input type="text">
-                        <label>Email</label>
-                    </div>
-
-                    <div class="popup__flexRow">
-                        <div class="popup__check">
-                            <input type="checkbox" name="check11" id="check11">
-                            <label for="check11"></label>
-                            <span class="popup__check-label">
-                                Я согласен с
-                                <a href="lavascript://">правилами</a>
-                            </span>
-                        </div>
-
-                        <a href="javascript://" onclick="popupPassword()">Забыли пароль?</a>
-                    </div>
-
-                    <input type="submit" value="войти" class="checkout__button button">
-
-                    <a href="javascript://" class="popup__row" onclick="popupRegister()">у меня нет аккаунта</a>
-                </form>
-            </div>
-
-            <div class="popup password">
-                <div class="close popup__close">
-                    <span class="close__line"></span>
-                    <span class="close__line"></span>
-                </div>
-
-                <h2 class="title popup__title">
-                    восстановить пароль
-                </h2>
-
-                <p class="popup__subtitle">
-                    Введите email адресс, на который будет отправленено сообщение с инструкциями
-                </p>
-
-                <form action="" class="popup__form">
-                    <div class="checkout__field">
-
-                        <input type="text">
-                        <label>Email</label>
-                    </div>
-
-                    <input type="submit" value="отправить" class="checkout__button button">
-                </form>
-            </div>
-
+                <a href="javascript://" class="popup__row" onclick="popupRegister()">у меня нет аккаунта</a>
+            </form>
         </div>
+
+        <div class="popup password">
+            <div class="close popup__close">
+                <span class="close__line"></span>
+                <span class="close__line"></span>
+            </div>
+
+            <h2 class="title popup__title">
+                восстановить пароль
+            </h2>
+
+            <p class="popup__subtitle">
+                Введите email адресс, на который будет отправленено сообщение с инструкциями
+            </p>
+
+            <form action="" class="popup__form">
+                <div class="checkout__field">
+
+                    <input type="text">
+                    <label>Email</label>
+                </div>
+
+                <input type="submit" value="отправить" class="checkout__button button">
+            </form>
+        </div>
+
     </div>
 
     <div class="header__bag bag">
@@ -223,7 +222,11 @@
 
             <div class="header__col--big">
 
-
+                <div class="header__toggler">
+                    <span class="header__toggler-line"></span>
+                    <span class="header__toggler-line"></span>
+                    <span class="header__toggler-line"></span>
+                </div>
 
                 <!-- drop -->
                 <div class="dropdown header__dropdown">
@@ -300,28 +303,14 @@
                 </div>
 
 
-                <!-- drop -->
-                <div class="dropdown header__dropdown">
-                    <a href="javascript://" class="header__dropdown-heading dropdown__heading">
-                        покупателям
-                        <span class="icon-chevron"></span>
-                    </a>
-
-                    <div class="dropdown__body header__dropdown-body">
-                        <a href="javascript://" class="dropdown__item header__dropdown-item">opt1</a>
-                        <a href="javascript://" class="dropdown__item header__dropdown-item">opt2</a>
-                    </div>
-                </div>
+                <!-- name -->
+                <span class="header__name">cantelmo</span>
 
             </div>
 
             <div class="header__col">
 
-                <div class="header__toggler">
-                    <span class="header__toggler-line"></span>
-                    <span class="header__toggler-line"></span>
-                    <span class="header__toggler-line"></span>
-                </div>
+                
 
                 <a href="./index.html" class="header__logo">
                     <img src="./img/svg/logo.svg" alt="">
@@ -484,8 +473,8 @@
     </div>
 
 
-     <!-- footer -->
-     <footer class="footer">
+    <!-- footer -->
+    <footer class="footer">
         <div class="wrap footer__wrap">
             <div class="footer__top  padding-big">
 

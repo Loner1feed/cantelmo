@@ -1,6 +1,8 @@
 @media screen and (min-width: 530px) {
   .header__toggler {
     display: none; }
+  .header__name {
+    max-height: 20px; }
   .header__col {
     margin: 0px auto; }
   .header__col--big {
@@ -8,14 +10,13 @@
     max-width: 235px;
     width: 100%;
     margin-right: 0;
-    margin-left: 0;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between; }
+    margin-left: 0; }
     .header__col--big:first-child {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
+      display: flex;
+      padding-top: 25px;
+      max-width: 235px; }
   .header__logo {
     max-width: 105px;
     min-width: 80px; }
@@ -38,13 +39,14 @@
     -ms-flex-direction: column;
     flex-direction: column;
     color: #ffffff;
-    max-height: 15px; }
+    max-height: 20px; }
     .header__dropdown-heading {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       font-size: 12px;
       position: relative;
+      font-family: 'Playfair';
       z-index: 10;
       padding: 5px;
       -webkit-box-sizing: border-box;
@@ -732,6 +734,10 @@
     padding-top: 40px; }
   .header__logo {
     max-width: 130px; }
+  .header__name {
+    font-size: 16px;
+    max-height: 35px;
+    padding: 10px; }
   .header__dropdown {
     max-height: 35px; }
     .header__dropdown-heading {
@@ -745,6 +751,8 @@
       font-size: 18px; }
   .header__col--big {
     max-width: 280px; }
+    .header__col--big:first-child {
+      max-width: 280px; }
   .header__nav {
     max-width: 220px;
     font-size: 26px; }
@@ -1160,16 +1168,24 @@
     margin-left: 30px; }
   .header__logo {
     max-width: 200px; }
-  .header__dropdown {
+  .header__name {
+    font-size: 24px;
     max-height: 30px; }
+  .header__dropdown {
+    max-height: 30px;
+    margin-right: 50px; }
     .header__dropdown-heading {
-      font-size: 24px; }
+      font-size: 24px;
+      padding-top: 3px; }
       .header__dropdown-heading .icon-chevron {
         font-size: 12px; }
     .header__dropdown-body {
-      top: calc(100% + 16px); }
+      top: calc(100% + 10px); }
   .header__col--big {
     max-width: 410px; }
+    .header__col--big:first-child {
+      max-width: 410px;
+      padding-top: 20px; }
   .header__nav {
     max-width: 330px;
     font-size: 30px; }

@@ -4,19 +4,24 @@
             display: none;
         }
 
+        &__name{
+            max-height: 20px;
+        }
+
         &__col{
             margin: 0px auto;
         }
         &__col--big{
             &:first-child{
                 display: flex;
+                padding-top: 25px;
+                max-width: 235px;
             }
             padding-top: 25px;
             max-width: 235px;
             width: 100%;
             margin-right: 0;
             margin-left: 0;
-            justify-content: space-between;
         }
         
 
@@ -45,11 +50,12 @@
             display: flex;
             flex-direction: column;
             color: #ffffff;
-            max-height: 15px;
+            max-height: 20px;
             &-heading{
                 display: flex;
                 font-size: 12px;
                 position: relative;
+                font-family: 'Playfair';
                 z-index: 10;
                 padding: 5px;
                 box-sizing: border-box;
@@ -1061,6 +1067,12 @@
 
         }
 
+        &__name{
+            font-size: 16px;
+            max-height: 35px;
+            padding: 10px;
+        }
+
         &__dropdown{
             max-height: 35px;
             &-heading{
@@ -1082,6 +1094,9 @@
 
         &__col--big{
             max-width: 280px;
+            &:first-child{
+                max-width: 280px;
+            }
         }
 
         &__nav{
@@ -1787,22 +1802,34 @@
 
         }
 
+        &__name{
+            font-size: 24px;
+            max-height: 30px;
+
+        }
+
         &__dropdown{
             max-height: 30px;
+            margin-right: 50px;
             &-heading{
                 font-size: 24px;
+                padding-top: 3px;
                 .icon-chevron{
                     font-size: 12px;
                 }
             }
 
             &-body{
-                top: calc(100% + 16px);
+                top: calc(100% + 10px);
             }
         }
 
         &__col--big{
             max-width: 410px;
+            &:first-child{
+                max-width: 410px;
+                padding-top: 20px;
+            }
         }
 
         &__nav{
