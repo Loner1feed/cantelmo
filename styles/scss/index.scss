@@ -2581,6 +2581,7 @@ a {
     span{
         color: #ffffff;
         font-size: 22px;
+        cursor: pointer;
     }
 }
 
@@ -3090,12 +3091,25 @@ a {
         width: 1px;
     }
 
+    
+
     &__colors {
         display: flex;
         margin-left: 17px;
+        &-item{
+            input{
+                visibility: hidden;
+                position: absolute;
+                &:checked + label{
+                    background: #ffffff;
+                    border-color: rgba(111, 111, 111, 0.2);
+                }
+            }
+        }
     }
 
     &__color {
+        display: block;
         width: 30px;
         height: 30px;
         min-width: 30px;
@@ -3105,8 +3119,7 @@ a {
         border-radius: 50%;
         border: 1px solid #fff;
 
-        &:hover,
-        &--active {
+        &:hover{
             background: #ffffff;
             border-color: rgba(111, 111, 111, 0.2);
         }
@@ -3115,6 +3128,7 @@ a {
 
 
     &__fill {
+        display: block;
         border-radius: 50%;
         height: 100%;
         width: 100%;
@@ -3302,6 +3316,10 @@ a {
     .itemCard {
         margin: 0px 5px;
         max-width: 700px;
+    }
+
+    &__arrows{
+        display: flex;
     }
 }
 

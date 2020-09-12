@@ -141,7 +141,7 @@ $('.product-slider__slider').slick({
     centerPadding: 0,
     infinite: false,
     nextArrow: '<a href="javascript://" class="slider__arrow slider__arrow--next"><span class="icon-chevron"></span></a>',
-    prevArrow: '<a href="javascript://" class="slider__arrow slider__arrow--next"><span class="icon-chevron"></span></a>',
+    prevArrow: '<a href="javascript://" class="slider__arrow slider__arrow--prev"><span class="icon-chevron"></span></a>',
     appendArrows: $('.product-slider__arrows'),
     responsive: [
         {
