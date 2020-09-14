@@ -161,6 +161,38 @@ $('.product-slider__slider').slick({
     ]
 })
 
+// product-slider2
+$('.product-slider__slider2').slick({
+    slidesToShow: 3,
+    slidesToScroll:1,
+    centerMode: true,
+    centerPadding: 0,
+    infinite: false,
+    nextArrow: '<a href="javascript://" class="slider__arrow slider__arrow--next"><span class="icon-chevron"></span></a>',
+    prevArrow: '<a href="javascript://" class="slider__arrow slider__arrow--prev"><span class="icon-chevron"></span></a>',
+    appendArrows: $('.product-slider__arrows2'),
+    responsive: [
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+            }
+        },
+
+        {
+            breakpoint: 530,
+            settings: {
+                slidesToShow: 1,
+                variableWidth: true,
+            }
+        }
+    ]
+})
+
+
+// $('.catalog-small__label').click(function(){
+//     $(this).parent().children('.catalog-small__drop').toggleClass('catalog-small__drop--active')
+// })
 
 // answer
 $('.answers__plus').click(function () {

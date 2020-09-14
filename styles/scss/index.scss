@@ -609,23 +609,26 @@ a {
     color: #ffffff;
     transition: 0.5s ease-in-out;
     overflow: hidden;
+    overflow-x: hidden;
 
     &__dropdown {
-        padding: 0px 25px;
+        // padding-left: 25px;
 
-        &:not(:last-child) {
-            border-bottom: 1px solid #444444;
-        }
+        // &:not(:last-child) {
+        //     
+        // }
 
         &-heading {
             display: flex;
             justify-content: space-between;
             font-size: 18px;
             padding: 20px 0px;
+            padding-left: 15px;
             text-transform: uppercase;
-
+            border-bottom: 1px solid #444444;
             .icon-chevron {
                 font-size: 14px;
+                margin-right: 25px;
                 transform: rotate(90deg);
             }
         }
@@ -639,18 +642,35 @@ a {
             flex-direction: column;
 
             &--open {
-                padding-bottom: 20px;
+                // padding-bottom: 20px;
                 height: auto;
             }
         }
-
-        &-item {
-            padding: 6px 0;
+        &-first{
+            // padding-left: 15px;
+            padding: 0;
+            background: #353535;
+            border-bottom: 1px solid #4d4c4c;
+            .menu__dropdown-heading{
+                padding-left: 30px;
+            }
         }
-
-        // &__socials{
-
-        // }
+        &-second{
+            // padding-left: 15px;
+            background: #3d3d3d;
+            border-bottom: 1px solid #585858;
+            .menu__dropdown-heading{
+                padding-left: 45px; 
+            }
+        }
+        &-third{
+            // padding-left: 15px;
+            background: #474747;
+            border-bottom: 1px solid #696969;
+            .menu__dropdown-heading{
+                padding-left: 60px; 
+            }
+        }
 
 
     }
@@ -973,6 +993,7 @@ a {
         border-bottom: 1px solid #444;
         padding-right: 15px;
         padding-left: 15px;
+        padding-bottom: 10px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -1091,6 +1112,12 @@ a {
             line-height: 24px;
         }
     }
+
+    &__col{
+        &:last-child{
+            display: none;
+        }
+    }
 }
 
 .slider {
@@ -1153,7 +1180,8 @@ a {
         max-width: 380px;
 
         img {
-            width: 100%;
+            // width: 100%;
+            min-height: 500px;
         }
     }
 
@@ -3319,6 +3347,10 @@ a {
     }
 
     &__arrows{
+        display: flex;
+    }
+
+    &__arrows2{
         display: flex;
     }
 }
