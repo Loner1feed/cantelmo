@@ -1176,6 +1176,10 @@
         &__wrap{
             padding-top: 60px;
         }
+
+        &__grid{
+            grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+        }
         
         &__heading{
             display: flex;

@@ -780,6 +780,8 @@
     margin: 0px -12px; }
   .catalog__wrap {
     padding-top: 60px; }
+  .catalog__grid {
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr)); }
   .catalog__heading {
     display: -webkit-box;
     display: -ms-flexbox;
